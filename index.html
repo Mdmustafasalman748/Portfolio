@@ -1,722 +1,668 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Portfolio of Mustafa Salman Mohammed - Software Developer, Full Stack Developer and AI Enthusiast"
-    >
-
-    <title>Mustafa Salman Mohammed | Software Developer</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+  name="description"
+  content="Portfolio of Mustafa Salman Mohammed - Software Developer, Full Stack Developer and AI Enthusiast"
+>
+<title>Mustafa Salman Mohammed | Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+<!-- Navigation -->
+<nav class="nav">
+  <a href="#home" class="nav__brand">
+    msm<span class="nav__cursor">_</span>
+  </a>
+  <ul class="nav__links">
+    <li><a href="#home">home</a></li>
+    <li><a href="#about">about</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#experience">experience</a></li>
+    <li><a href="#education">education</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#certifications">certs</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <a href="#home" class="nav__brand">
-            msm<span class="nav__cursor">_</span>
-        </a>
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero__grid">
+    <div class="hero__copy">
+      <p class="kicker hero__eyebrow">
+        <span class="status-dot" aria-hidden="true"></span>
+        open to software &amp; ai roles
+      </p>
+      <h1 class="hero__title">Mustafa Salman<br>Mohammed</h1>
+      <h2 class="hero__subtitle">
+        Full-stack engineer, currently building
+        the AI layer on top of the stack.
+      </h2>
+      <p class="hero__desc">
+        I build practical full-stack applications with C#,
+        ASP.NET, Java, Spring Boot, Python, JavaScript, SQL
+        and REST APIs — and I'm layering generative AI, LLMs,
+        agents and RAG on top of that foundation.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View projects</a>
+        <a href="resume.pdf" class="btn btn--ghost" download>Download résumé</a>
+      </div>
+    </div>
 
-        <ul class="nav__links">
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#experience">experience</a></li>
-            <li><a href="#education">education</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#certifications">certs</a></li>
-            <li><a href="#contact">contact</a></li>
+    <div class="hero__stack">
+      <p class="stack__caption mono">the.stack()</p>
+      <div class="stack">
+        <div class="stack__layer stack__layer--ai is-building">
+          <div class="stack__header">
+            <span class="stack__name">AI &amp; Agents</span>
+            <span class="stack__badge">building</span>
+          </div>
+          <div class="stack__chips">
+            <span class="chip chip--accent">Generative AI</span>
+            <span class="chip chip--accent">LLMs</span>
+            <span class="chip chip--accent">RAG</span>
+            <span class="chip chip--accent">Agentic AI</span>
+          </div>
+        </div>
+
+        <div class="stack__layer stack__layer--frontend">
+          <div class="stack__header">
+            <span class="stack__name">Frontend</span>
+          </div>
+          <div class="stack__chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="stack__layer stack__layer--backend">
+          <div class="stack__header">
+            <span class="stack__name">Backend</span>
+          </div>
+          <div class="stack__chips">
+            <span class="chip">C# / ASP.NET</span>
+            <span class="chip">Java / Spring Boot</span>
+            <span class="chip">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="stack__layer stack__layer--data">
+          <div class="stack__header">
+            <span class="stack__name">Data</span>
+          </div>
+          <div class="stack__chips">
+            <span class="chip">SQL Server</span>
+            <span class="chip">MySQL</span>
+          </div>
+        </div>
+
+        <div class="stack__layer stack__layer--foundation">
+          <div class="stack__header">
+            <span class="stack__name">Foundations</span>
+          </div>
+          <div class="stack__chips">
+            <span class="chip">Computer Science</span>
+            <span class="chip">OOP · SDLC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="section__head">
+    <p class="kicker">about</p>
+    <h2 class="section__title">A bit about how I got here</h2>
+  </div>
+
+  <div class="window window--about">
+    <div class="window__bar">
+      <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
+      <span class="window__title mono">about.md</span>
+    </div>
+    <div class="window__body about-content">
+      <p>
+        I'm a Software Developer with a Bachelor of Engineering
+        in Computer Science from Osmania University and a
+        Postgraduate Degree in Full Stack Software Development
+        from Lambton College.
+      </p>
+      <p>
+        My technical experience spans C#, ASP.NET, Java,
+        Spring Boot, Python, JavaScript, HTML, CSS, SQL Server,
+        MySQL and REST API development.
+      </p>
+      <p>
+        During my .NET internship at MNet Academy, I worked on
+        full-stack applications using C#, ASP.NET, SQL Server,
+        HTML, CSS and JavaScript.
+      </p>
+      <p>
+        I also completed a Web Development Internship through
+        Internshala, where I worked on web application development,
+        database management and the PG Life Housing Project.
+      </p>
+      <p>
+        Right now I'm focused on expanding into Generative AI,
+        Large Language Models, AI Agents, Agentic AI, Prompt
+        Engineering and Retrieval-Augmented Generation — the
+        layer I'm actively building on top of the stack above.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+  <div class="section__head">
+    <p class="kicker">skills</p>
+    <h2 class="section__title">Technical skills</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <p class="skill-card__kicker mono">lang</p>
+      <h3 class="skill-card__title">Programming Languages</h3>
+      <div class="chip-row">
+        <span class="chip">Python</span>
+        <span class="chip">Java</span>
+        <span class="chip">C#</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">SQL</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__kicker mono">web</p>
+      <h3 class="skill-card__title">Web Development</h3>
+      <div class="chip-row">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">ASP.NET</span>
+        <span class="chip">ASP.NET MVC</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__kicker mono">api</p>
+      <h3 class="skill-card__title">Backend Development</h3>
+      <div class="chip-row">
+        <span class="chip">Spring Boot</span>
+        <span class="chip">.NET</span>
+        <span class="chip">Maven</span>
+        <span class="chip">REST APIs</span>
+        <span class="chip">CRUD</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__kicker mono">data</p>
+      <h3 class="skill-card__title">Databases</h3>
+      <div class="chip-row">
+        <span class="chip">SQL Server</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">Database Design</span>
+        <span class="chip">Database Management</span>
+      </div>
+    </div>
+
+    <div class="skill-card skill-card--accent">
+      <p class="skill-card__kicker mono">ai</p>
+      <h3 class="skill-card__title">Artificial Intelligence</h3>
+      <div class="chip-row">
+        <span class="chip chip--accent">Generative AI</span>
+        <span class="chip chip--accent">LLMs</span>
+        <span class="chip chip--accent">AI Agents</span>
+        <span class="chip chip--accent">Agentic AI</span>
+        <span class="chip chip--accent">Prompt Engineering</span>
+        <span class="chip chip--accent">RAG</span>
+        <span class="chip chip--accent">Image Generation</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <p class="skill-card__kicker mono">core</p>
+      <h3 class="skill-card__title">Development Concepts</h3>
+      <div class="chip-row">
+        <span class="chip">OOP</span>
+        <span class="chip">CRUD</span>
+        <span class="chip">SDLC</span>
+        <span class="chip">Team Collaboration</span>
+        <span class="chip">API Testing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="section">
+  <div class="section__head">
+    <p class="kicker">experience</p>
+    <h2 class="section__title">Professional experience</h2>
+  </div>
+
+  <div class="timeline">
+    <article class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__meta">
+          <span class="mono meta-date">2023-08 → 2023-11</span>
+        </div>
+        <h3>.NET Intern</h3>
+        <h4>MNet Academy</h4>
+        <p class="timeline__location">Hyderabad, Telangana, India · On-site</p>
+        <ul>
+          <li>Developed application features using C# and ASP.NET.</li>
+          <li>Designed and managed databases using SQL Server.</li>
+          <li>Implemented CRUD operations for student and attendance records.</li>
+          <li>Integrated frontend interfaces with backend functionality.</li>
+          <li>Worked with HTML, CSS and JavaScript to build user interfaces.</li>
+          <li>Applied object-oriented programming and database management concepts.</li>
+          <li>Gained hands-on experience in full-stack application development.</li>
         </ul>
-    </nav>
-
-
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero__grid">
-
-            <div class="hero__copy">
-                <p class="kicker hero__eyebrow">
-                    <span class="status-dot" aria-hidden="true"></span>
-                    open to software &amp; ai roles
-                </p>
-
-                <h1 class="hero__title">Mustafa Salman<br>Mohammed</h1>
-
-                <h2 class="hero__subtitle">
-                    Full-stack engineer, currently building
-                    the AI layer on top of the stack.
-                </h2>
-
-                <p class="hero__desc">
-                    I build practical full-stack applications with C#,
-                    ASP.NET, Java, Spring Boot, Python, JavaScript, SQL
-                    and REST APIs — and I'm layering generative AI, LLMs,
-                    agents and RAG on top of that foundation.
-                </p>
-
-                <div class="hero__actions">
-                    <a href="#projects" class="btn btn--primary">View projects</a>
-                    <a href="resume.pdf" class="btn btn--ghost" download>Download résumé</a>
-                </div>
-            </div>
-
-            <div class="hero__stack">
-                <p class="stack__caption mono">the.stack()</p>
-
-                <div class="stack">
-
-                    <div class="stack__layer stack__layer--ai is-building">
-                        <div class="stack__header">
-                            <span class="stack__name">AI &amp; Agents</span>
-                            <span class="stack__badge">building</span>
-                        </div>
-                        <div class="stack__chips">
-                            <span class="chip chip--accent">Generative AI</span>
-                            <span class="chip chip--accent">LLMs</span>
-                            <span class="chip chip--accent">RAG</span>
-                            <span class="chip chip--accent">Agentic AI</span>
-                        </div>
-                    </div>
-
-                    <div class="stack__layer stack__layer--frontend">
-                        <div class="stack__header">
-                            <span class="stack__name">Frontend</span>
-                        </div>
-                        <div class="stack__chips">
-                            <span class="chip">HTML</span>
-                            <span class="chip">CSS</span>
-                            <span class="chip">JavaScript</span>
-                        </div>
-                    </div>
-
-                    <div class="stack__layer stack__layer--backend">
-                        <div class="stack__header">
-                            <span class="stack__name">Backend</span>
-                        </div>
-                        <div class="stack__chips">
-                            <span class="chip">C# / ASP.NET</span>
-                            <span class="chip">Java / Spring Boot</span>
-                            <span class="chip">REST APIs</span>
-                        </div>
-                    </div>
-
-                    <div class="stack__layer stack__layer--data">
-                        <div class="stack__header">
-                            <span class="stack__name">Data</span>
-                        </div>
-                        <div class="stack__chips">
-                            <span class="chip">SQL Server</span>
-                            <span class="chip">MySQL</span>
-                        </div>
-                    </div>
-
-                    <div class="stack__layer stack__layer--foundation">
-                        <div class="stack__header">
-                            <span class="stack__name">Foundations</span>
-                        </div>
-                        <div class="stack__chips">
-                            <span class="chip">Computer Science</span>
-                            <span class="chip">OOP · SDLC</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
+        <div class="chip-row">
+          <span class="chip">C#</span>
+          <span class="chip">ASP.NET</span>
+          <span class="chip">ASP.NET MVC</span>
+          <span class="chip">SQL Server</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
         </div>
-    </section>
+      </div>
+    </article>
 
-
-    <!-- About -->
-    <section id="about" class="section">
-        <div class="section__head">
-            <p class="kicker">about</p>
-            <h2 class="section__title">A bit about how I got here</h2>
+    <article class="timeline__item">
+      <div class="timeline__marker"></div>
+      <div class="timeline__content">
+        <div class="timeline__meta">
+          <span class="mono meta-date">2021-10 → 2021-12</span>
         </div>
-
-        <div class="window window--about">
-            <div class="window__bar">
-                <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
-                <span class="window__title mono">about.md</span>
-            </div>
-
-            <div class="window__body about-content">
-                <p>
-                    I'm a Software Developer with a Bachelor of Engineering
-                    in Computer Science from Osmania University and a
-                    Postgraduate Degree in Full Stack Software Development
-                    from Lambton College.
-                </p>
-
-                <p>
-                    My technical experience spans C#, ASP.NET, Java,
-                    Spring Boot, Python, JavaScript, HTML, CSS, SQL Server,
-                    MySQL and REST API development.
-                </p>
-
-                <p>
-                    During my .NET internship at MNet Academy, I worked on
-                    full-stack applications using C#, ASP.NET, SQL Server,
-                    HTML, CSS and JavaScript.
-                </p>
-
-                <p>
-                    I also completed a Web Development Internship through
-                    Internshala, where I worked on web application development,
-                    database management and the PG Life Housing Project.
-                </p>
-
-                <p>
-                    Right now I'm focused on expanding into Generative AI,
-                    Large Language Models, AI Agents, Agentic AI, Prompt
-                    Engineering and Retrieval-Augmented Generation — the
-                    layer I'm actively building on top of the stack above.
-                </p>
-            </div>
+        <h3>Web Development Intern</h3>
+        <h4>Internshala</h4>
+        <p class="timeline__location">Hyderabad, Telangana, India · Hybrid</p>
+        <ul>
+          <li>Gained practical experience designing and developing web applications.</li>
+          <li>Worked with HTML, CSS, JavaScript and database management.</li>
+          <li>Developed the PG Life Housing Project to help students find suitable accommodation.</li>
+          <li>Improved understanding of frontend and backend integration.</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Database Management</span>
+          <span class="chip">Web Development</span>
         </div>
-    </section>
-
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-        <div class="section__head">
-            <p class="kicker">skills</p>
-            <h2 class="section__title">Technical skills</h2>
-        </div>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <p class="skill-card__kicker mono">lang</p>
-                <h3 class="skill-card__title">Programming Languages</h3>
-                <div class="chip-row">
-                    <span class="chip">Python</span>
-                    <span class="chip">Java</span>
-                    <span class="chip">C#</span>
-                    <span class="chip">JavaScript</span>
-                    <span class="chip">SQL</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <p class="skill-card__kicker mono">web</p>
-                <h3 class="skill-card__title">Web Development</h3>
-                <div class="chip-row">
-                    <span class="chip">HTML</span>
-                    <span class="chip">CSS</span>
-                    <span class="chip">JavaScript</span>
-                    <span class="chip">ASP.NET</span>
-                    <span class="chip">ASP.NET MVC</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <p class="skill-card__kicker mono">api</p>
-                <h3 class="skill-card__title">Backend Development</h3>
-                <div class="chip-row">
-                    <span class="chip">Spring Boot</span>
-                    <span class="chip">.NET</span>
-                    <span class="chip">Maven</span>
-                    <span class="chip">REST APIs</span>
-                    <span class="chip">CRUD</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <p class="skill-card__kicker mono">data</p>
-                <h3 class="skill-card__title">Databases</h3>
-                <div class="chip-row">
-                    <span class="chip">SQL Server</span>
-                    <span class="chip">MySQL</span>
-                    <span class="chip">Database Design</span>
-                    <span class="chip">Database Management</span>
-                </div>
-            </div>
-
-            <div class="skill-card skill-card--accent">
-                <p class="skill-card__kicker mono">ai</p>
-                <h3 class="skill-card__title">Artificial Intelligence</h3>
-                <div class="chip-row">
-                    <span class="chip chip--accent">Generative AI</span>
-                    <span class="chip chip--accent">LLMs</span>
-                    <span class="chip chip--accent">AI Agents</span>
-                    <span class="chip chip--accent">Agentic AI</span>
-                    <span class="chip chip--accent">Prompt Engineering</span>
-                    <span class="chip chip--accent">RAG</span>
-                    <span class="chip chip--accent">Image Generation</span>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <p class="skill-card__kicker mono">core</p>
-                <h3 class="skill-card__title">Development Concepts</h3>
-                <div class="chip-row">
-                    <span class="chip">OOP</span>
-                    <span class="chip">CRUD</span>
-                    <span class="chip">SDLC</span>
-                    <span class="chip">Team Collaboration</span>
-                    <span class="chip">API Testing</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Experience -->
-    <section id="experience" class="section">
-        <div class="section__head">
-            <p class="kicker">experience</p>
-            <h2 class="section__title">Professional experience</h2>
-        </div>
-
-        <div class="timeline">
-
-            <article class="timeline__item">
-                <div class="timeline__marker"></div>
-
-                <div class="timeline__content">
-                    <div class="timeline__meta">
-                        <span class="mono meta-date">2023-08 → 2023-11</span>
-                    </div>
-
-                    <h3>.NET Intern</h3>
-                    <h4>MNet Academy</h4>
-                    <p class="timeline__location">Hyderabad, Telangana, India · On-site</p>
-
-                    <ul>
-                        <li>Developed application features using C# and ASP.NET.</li>
-                        <li>Designed and managed databases using SQL Server.</li>
-                        <li>Implemented CRUD operations for student and attendance records.</li>
-                        <li>Integrated frontend interfaces with backend functionality.</li>
-                        <li>Worked with HTML, CSS and JavaScript to build user interfaces.</li>
-                        <li>Applied object-oriented programming and database management concepts.</li>
-                        <li>Gained hands-on experience in full-stack application development.</li>
-                    </ul>
-
-                    <div class="chip-row">
-                        <span class="chip">C#</span>
-                        <span class="chip">ASP.NET</span>
-                        <span class="chip">ASP.NET MVC</span>
-                        <span class="chip">SQL Server</span>
-                        <span class="chip">HTML</span>
-                        <span class="chip">CSS</span>
-                        <span class="chip">JavaScript</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="timeline__item">
-                <div class="timeline__marker"></div>
-
-                <div class="timeline__content">
-                    <div class="timeline__meta">
-                        <span class="mono meta-date">2021-10 → 2021-12</span>
-                    </div>
-
-                    <h3>Web Development Intern</h3>
-                    <h4>Internshala</h4>
-                    <p class="timeline__location">Hyderabad, Telangana, India · Hybrid</p>
-
-                    <ul>
-                        <li>Gained practical experience designing and developing web applications.</li>
-                        <li>Worked with HTML, CSS, JavaScript and database management.</li>
-                        <li>Developed the PG Life Housing Project to help students find suitable accommodation.</li>
-                        <li>Improved understanding of frontend and backend integration.</li>
-                    </ul>
-
-                    <div class="chip-row">
-                        <span class="chip">HTML</span>
-                        <span class="chip">CSS</span>
-                        <span class="chip">JavaScript</span>
-                        <span class="chip">Database Management</span>
-                        <span class="chip">Web Development</span>
-                    </div>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-
-    <!-- Education -->
-    <section id="education" class="section">
-        <div class="section__head">
-            <p class="kicker">education</p>
-            <h2 class="section__title">Education</h2>
-        </div>
-
-        <div class="edu-grid">
-
-            <article class="edu-card">
-                <p class="mono edu-card__year">2018-07 → 2022-05</p>
-                <h3>Bachelor of Engineering — Computer Science</h3>
-                <h4>Osmania University, Hyderabad</h4>
-                <p class="edu-card__desc">Bachelor of Engineering in Computer Science.</p>
-                <p class="edu-card__grade">Grade: <strong>8.13 / 10</strong></p>
-            </article>
-
-            <article class="edu-card">
-                <p class="mono edu-card__year">2024-05 → 2025-12</p>
-                <h3>Postgraduate Degree — Full Stack Software Development</h3>
-                <h4>Lambton College</h4>
-                <p class="edu-card__desc">
-                    Postgraduate program focused on full-stack software
-                    development and modern application development.
-                </p>
-                <p class="edu-card__grade">Grade: <strong>3.65 / 4.0</strong></p>
-            </article>
-
-        </div>
-    </section>
-
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-        <div class="section__head">
-            <p class="kicker">projects</p>
-            <h2 class="section__title">Featured projects</h2>
-        </div>
-
-        <div class="projects-grid">
-
-            <article class="window project-card">
-                <div class="window__bar">
-                    <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
-                    <span class="window__title mono">banking_management_system.py</span>
-                </div>
-                <div class="window__body">
-                    <p class="project-card__desc">
-                        Built with a five-member team during the Full
-                        Stack Software Development program at Lambton
-                        College.
-                    </p>
-
-                    <ul class="project-card__features">
-                        <li>User registration &amp; JWT-based authentication</li>
-                        <li>Digital wallet creation and balance tracking</li>
-                        <li>Deposits, withdrawals and fund transfers</li>
-                        <li>Transaction history and session management</li>
-                    </ul>
-
-                    <div class="chip-row">
-                        <span class="chip">Python</span>
-                        <span class="chip">Tornado</span>
-                        <span class="chip">REST API</span>
-                        <span class="chip">JWT</span>
-                        <span class="chip">Database</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="window project-card">
-                <div class="window__bar">
-                    <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
-                    <span class="window__title mono">employee_management_system.cs</span>
-                </div>
-                <div class="window__body">
-                    <p class="project-card__desc">
-                        A full-stack system for efficiently managing
-                        employee information.
-                    </p>
-
-                    <ul class="project-card__features">
-                        <li>Employee record management</li>
-                        <li>CRUD operations</li>
-                        <li>Database connectivity</li>
-                        <li>Frontend and backend integration</li>
-                    </ul>
-
-                    <div class="chip-row">
-                        <span class="chip">C#</span>
-                        <span class="chip">ASP.NET</span>
-                        <span class="chip">ASP.NET MVC</span>
-                        <span class="chip">SQL Server</span>
-                        <span class="chip">HTML</span>
-                        <span class="chip">CSS</span>
-                        <span class="chip">JavaScript</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="window project-card">
-                <div class="window__bar">
-                    <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
-                    <span class="window__title mono">movie_booking_system.java</span>
-                </div>
-                <div class="window__body">
-                    <p class="project-card__desc">
-                        A backend application for movie selection and
-                        booking.
-                    </p>
-
-                    <ul class="project-card__features">
-                        <li>User management</li>
-                        <li>Movie selection &amp; booking functionality</li>
-                        <li>Backend development</li>
-                        <li>Database integration</li>
-                    </ul>
-
-                    <div class="chip-row">
-                        <span class="chip">Java</span>
-                        <span class="chip">Spring Boot</span>
-                        <span class="chip">Maven</span>
-                        <span class="chip">Database</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="window project-card">
-                <div class="window__bar">
-                    <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
-                    <span class="window__title mono">pg_life_housing.html</span>
-                </div>
-                <div class="window__body">
-                    <p class="project-card__desc">
-                        A web application designed to help students find
-                        suitable accommodation.
-                    </p>
-
-                    <ul class="project-card__features">
-                        <li>Housing search functionality</li>
-                        <li>Frontend development</li>
-                        <li>Database management</li>
-                        <li>Frontend and backend integration</li>
-                    </ul>
-
-                    <div class="chip-row">
-                        <span class="chip">HTML</span>
-                        <span class="chip">CSS</span>
-                        <span class="chip">JavaScript</span>
-                        <span class="chip">Database</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="window project-card">
-                <div class="window__bar">
-                    <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
-                    <span class="window__title mono">fog_secure_storage.java</span>
-                </div>
-                <div class="window__body">
-                    <p class="project-card__desc">
-                        A team project developing a security-oriented
-                        cloud storage solution using fog computing concepts.
-                    </p>
-
-                    <ul class="project-card__features">
-                        <li>Secure data management</li>
-                        <li>Cloud storage security</li>
-                        <li>Fog computing &amp; system design</li>
-                        <li>Research and analysis</li>
-                    </ul>
-
-                    <div class="chip-row">
-                        <span class="chip">Java</span>
-                        <span class="chip">Cloud Computing</span>
-                        <span class="chip">Fog Computing</span>
-                        <span class="chip">Cloud Security</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="window project-card">
-                <div class="window__bar">
-                    <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
-                    <span class="window__title mono">cloud_expense_tracker.jsx</span>
-                </div>
-                <div class="window__body">
-                    <p class="project-card__desc">
-                        A cloud-hosted expense tracker built with a React
-                        frontend and AWS for cloud infrastructure, for
-                        logging and keeping tabs on everyday spending
-                        from any device.
-                    </p>
-
-                    <ul class="project-card__features">
-                        <li>Add and manage expense entries</li>
-                        <li>Cloud-hosted on AWS, accessible from any device</li>
-                        <li>Component-based React frontend</li>
-                    </ul>
-
-                    <div class="chip-row">
-                        <span class="chip">React</span>
-                        <span class="chip">AWS</span>
-                        <span class="chip">Cloud Computing</span>
-                    </div>
-
-                    <a
-                        href="https://cloud-computing-project-taupe.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-card__live"
-                    >
-                        View live ↗
-                    </a>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-
-    <!-- Certifications -->
-    <section id="certifications" class="section">
-        <div class="section__head">
-            <p class="kicker">certifications</p>
-            <h2 class="section__title">Certifications &amp; training</h2>
-        </div>
-
-        <div class="cert-grid">
-
-            <article class="cert-card">
-                <p class="mono cert-card__date">issued 2026-01</p>
-                <h3>AI Master Class</h3>
-                <h4>Dhruv Rathee Academy</h4>
-                <p>Artificial Intelligence fundamentals, AI tools, prompt engineering and AI applications.</p>
-                <div class="chip-row">
-                    <span class="chip">Prompt Engineering</span>
-                    <span class="chip">Image Generation</span>
-                    <span class="chip">Artificial Intelligence</span>
-                </div>
-            </article>
-
-            <article class="cert-card">
-                <p class="mono cert-card__date">issued 2023-11</p>
-                <h3>Full Stack .NET Development</h3>
-                <h4>MNet Academy</h4>
-                <p>Training in C#, ASP.NET, SQL Server, HTML, CSS and JavaScript.</p>
-                <div class="chip-row">
-                    <span class="chip">C#</span>
-                    <span class="chip">ASP.NET</span>
-                    <span class="chip">SQL Server</span>
-                    <span class="chip">JavaScript</span>
-                </div>
-            </article>
-
-            <article class="cert-card">
-                <p class="mono cert-card__date">issued 2023-05</p>
-                <h3>Microsoft MS-900 Fundamentals</h3>
-                <h4>Udemy</h4>
-                <p>Microsoft 365, cloud fundamentals, Microsoft Azure, security and modern workplace solutions.</p>
-                <div class="chip-row">
-                    <span class="chip">Microsoft 365</span>
-                    <span class="chip">Microsoft Azure</span>
-                    <span class="chip">Cloud Fundamentals</span>
-                </div>
-            </article>
-
-            <article class="cert-card">
-                <p class="mono cert-card__date">issued 2021-12</p>
-                <h3>Web Development</h3>
-                <h4>Internshala</h4>
-                <p>Web development training covering HTML, CSS, JavaScript and web application development.</p>
-                <div class="chip-row">
-                    <span class="chip">HTML</span>
-                    <span class="chip">CSS</span>
-                    <span class="chip">JavaScript</span>
-                </div>
-            </article>
-
-            <article class="cert-card">
-                <p class="mono cert-card__date">issued 2021-11 · expires 2031-11</p>
-                <h3>Python for Beginners</h3>
-                <h4>Sololearn</h4>
-                <p>Python programming fundamentals and introductory programming concepts.</p>
-                <div class="chip-row">
-                    <span class="chip">Python</span>
-                    <span class="chip">Pandas</span>
-                    <span class="chip">Programming</span>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-
-    <!-- Currently Learning -->
-    <section class="section learning">
-        <div class="learning__panel">
-            <p class="kicker">currently building</p>
-            <h2 class="section__title">Full Stack Generative &amp; Agentic AI, with Python</h2>
-
-            <div class="chip-row learning__chips">
-                <span class="chip chip--accent">Python</span>
-                <span class="chip chip--accent">Generative AI</span>
-                <span class="chip chip--accent">LLMs</span>
-                <span class="chip chip--accent">AI Agents</span>
-                <span class="chip chip--accent">Agentic AI</span>
-                <span class="chip chip--accent">Prompt Engineering</span>
-                <span class="chip chip--accent">RAG</span>
-                <span class="chip chip--accent">AI Applications</span>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Career Objective -->
-    <section class="section objective">
-        <p class="kicker">objective</p>
-        <p class="objective__quote">
-            My goal is to become a skilled software developer specializing
-            in full-stack development and artificial intelligence — by
-            continuously learning emerging technologies, building
-            innovative solutions and contributing effectively to the
-            technology industry.
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section">
+  <div class="section__head">
+    <p class="kicker">education</p>
+    <h2 class="section__title">Education</h2>
+  </div>
+
+  <div class="edu-grid">
+    <article class="edu-card">
+      <p class="mono edu-card__year">2018-07 → 2022-05</p>
+      <h3>Bachelor of Engineering — Computer Science</h3>
+      <h4>Osmania University, Hyderabad</h4>
+      <p class="edu-card__desc">Bachelor of Engineering in Computer Science.</p>
+      <p class="edu-card__grade">Grade: <strong>8.13 / 10</strong></p>
+    </article>
+
+    <article class="edu-card">
+      <p class="mono edu-card__year">2024-05 → 2025-12</p>
+      <h3>Postgraduate Degree — Full Stack Software Development</h3>
+      <h4>Lambton College</h4>
+      <p class="edu-card__desc">
+        Postgraduate program focused on full-stack software
+        development and modern application development.
+      </p>
+      <p class="edu-card__grade">Grade: <strong>3.65 / 4.0</strong></p>
+    </article>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <div class="section__head">
+    <p class="kicker">projects</p>
+    <h2 class="section__title">Featured projects</h2>
+  </div>
+
+  <div class="projects-grid">
+    <article class="window project-card">
+      <div class="window__bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
+        <span class="window__title mono">banking_management_system.py</span>
+      </div>
+      <div class="window__body">
+        <p class="project-card__desc">
+          Built with a five-member team during the Full
+          Stack Software Development program at Lambton
+          College.
         </p>
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact" class="section contact">
-        <p class="kicker">contact</p>
-        <h2 class="section__title">Let's connect</h2>
-
-        <p class="contact__desc">
-            I'm currently looking for opportunities in Software
-            Development, Full Stack Development and AI-related roles.
-        </p>
-
-        <p class="mono contact__prompt">msm@dev ~ $ connect --linkedin --github</p>
-
-        <div class="contact__actions">
-            <a
-                href="https://www.linkedin.com/in/mustafa-salman-mohammed-b46750307/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn--primary"
-            >
-                LinkedIn
-            </a>
-
-            <a
-                href="https://github.com/Mdmustafasalman748"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn--ghost"
-            >
-                GitHub
-            </a>
+        <ul class="project-card__features">
+          <li>User registration &amp; JWT-based authentication</li>
+          <li>Digital wallet creation and balance tracking</li>
+          <li>Deposits, withdrawals and fund transfers</li>
+          <li>Transaction history and session management</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">Python</span>
+          <span class="chip">Tornado</span>
+          <span class="chip">REST API</span>
+          <span class="chip">JWT</span>
+          <span class="chip">Database</span>
         </div>
-    </section>
+      </div>
+    </article>
 
+    <article class="window project-card">
+      <div class="window__bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
+        <span class="window__title mono">employee_management_system.cs</span>
+      </div>
+      <div class="window__body">
+        <p class="project-card__desc">
+          A full-stack system for efficiently managing
+          employee information.
+        </p>
+        <ul class="project-card__features">
+          <li>Employee record management</li>
+          <li>CRUD operations</li>
+          <li>Database connectivity</li>
+          <li>Frontend and backend integration</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">C#</span>
+          <span class="chip">ASP.NET</span>
+          <span class="chip">ASP.NET MVC</span>
+          <span class="chip">SQL Server</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+        </div>
+        <a
+          href="https://employeemanagementsystem-two-delta.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-card__live"
+        >
+          View live ↗
+        </a>
+      </div>
+    </article>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Mustafa Salman Mohammed. All rights reserved.</p>
-    </footer>
+    <article class="window project-card">
+      <div class="window__bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
+        <span class="window__title mono">movie_booking_system.java</span>
+      </div>
+      <div class="window__body">
+        <p class="project-card__desc">
+          A backend application for movie selection and
+          booking.
+        </p>
+        <ul class="project-card__features">
+          <li>User management</li>
+          <li>Movie selection &amp; booking functionality</li>
+          <li>Backend development</li>
+          <li>Database integration</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">Java</span>
+          <span class="chip">Spring Boot</span>
+          <span class="chip">Maven</span>
+          <span class="chip">Database</span>
+        </div>
+        <a
+          href="https://github.com/Mdmustafasalman748/C0942876_Javafinalproject"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-card__live"
+        >
+          View source ↗
+        </a>
+      </div>
+    </article>
 
+    <article class="window project-card">
+      <div class="window__bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
+        <span class="window__title mono">pg_life_housing.html</span>
+      </div>
+      <div class="window__body">
+        <p class="project-card__desc">
+          A web application designed to help students find
+          suitable accommodation.
+        </p>
+        <ul class="project-card__features">
+          <li>Housing search functionality</li>
+          <li>Frontend development</li>
+          <li>Database management</li>
+          <li>Frontend and backend integration</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Database</span>
+        </div>
+      </div>
+    </article>
 
-    <script src="script.js"></script>
+    <article class="window project-card">
+      <div class="window__bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
+        <span class="window__title mono">fog_secure_storage.java</span>
+      </div>
+      <div class="window__body">
+        <p class="project-card__desc">
+          A team project developing a security-oriented
+          cloud storage solution using fog computing concepts.
+        </p>
+        <ul class="project-card__features">
+          <li>Secure data management</li>
+          <li>Cloud storage security</li>
+          <li>Fog computing &amp; system design</li>
+          <li>Research and analysis</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">Java</span>
+          <span class="chip">Cloud Computing</span>
+          <span class="chip">Fog Computing</span>
+          <span class="chip">Cloud Security</span>
+        </div>
+      </div>
+    </article>
 
+    <article class="window project-card">
+      <div class="window__bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
+        <span class="window__title mono">cloud_expense_tracker.jsx</span>
+      </div>
+      <div class="window__body">
+        <p class="project-card__desc">
+          A cloud-hosted expense tracker built with a React
+          frontend and AWS for cloud infrastructure, for
+          logging and keeping tabs on everyday spending
+          from any device.
+        </p>
+        <ul class="project-card__features">
+          <li>Add and manage expense entries</li>
+          <li>Cloud-hosted on AWS, accessible from any device</li>
+          <li>Component-based React frontend</li>
+        </ul>
+        <div class="chip-row">
+          <span class="chip">React</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Cloud Computing</span>
+        </div>
+        <a
+          href="https://cloud-computing-project-taupe.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-card__live"
+        >
+          View live ↗
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" class="section">
+  <div class="section__head">
+    <p class="kicker">certifications</p>
+    <h2 class="section__title">Certifications &amp; training</h2>
+  </div>
+
+  <div class="cert-grid">
+    <article class="cert-card">
+      <p class="mono cert-card__date">issued 2026-01</p>
+      <h3>AI Master Class</h3>
+      <h4>Dhruv Rathee Academy</h4>
+      <p>Artificial Intelligence fundamentals, AI tools, prompt engineering and AI applications.</p>
+      <div class="chip-row">
+        <span class="chip">Prompt Engineering</span>
+        <span class="chip">Image Generation</span>
+        <span class="chip">Artificial Intelligence</span>
+      </div>
+    </article>
+
+    <article class="cert-card">
+      <p class="mono cert-card__date">issued 2023-11</p>
+      <h3>Full Stack .NET Development</h3>
+      <h4>MNet Academy</h4>
+      <p>Training in C#, ASP.NET, SQL Server, HTML, CSS and JavaScript.</p>
+      <div class="chip-row">
+        <span class="chip">C#</span>
+        <span class="chip">ASP.NET</span>
+        <span class="chip">SQL Server</span>
+        <span class="chip">JavaScript</span>
+      </div>
+    </article>
+
+    <article class="cert-card">
+      <p class="mono cert-card__date">issued 2023-05</p>
+      <h3>Microsoft MS-900 Fundamentals</h3>
+      <h4>Udemy</h4>
+      <p>Microsoft 365, cloud fundamentals, Microsoft Azure, security and modern workplace solutions.</p>
+      <div class="chip-row">
+        <span class="chip">Microsoft 365</span>
+        <span class="chip">Microsoft Azure</span>
+        <span class="chip">Cloud Fundamentals</span>
+      </div>
+    </article>
+
+    <article class="cert-card">
+      <p class="mono cert-card__date">issued 2021-12</p>
+      <h3>Web Development</h3>
+      <h4>Internshala</h4>
+      <p>Web development training covering HTML, CSS, JavaScript and web application development.</p>
+      <div class="chip-row">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+      </div>
+    </article>
+
+    <article class="cert-card">
+      <p class="mono cert-card__date">issued 2021-11 · expires 2031-11</p>
+      <h3>Python for Beginners</h3>
+      <h4>Sololearn</h4>
+      <p>Python programming fundamentals and introductory programming concepts.</p>
+      <div class="chip-row">
+        <span class="chip">Python</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">Programming</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Currently Learning -->
+<section class="section learning">
+  <div class="learning__panel">
+    <p class="kicker">currently building</p>
+    <h2 class="section__title">Full Stack Generative &amp; Agentic AI, with Python</h2>
+    <div class="chip-row learning__chips">
+      <span class="chip chip--accent">Python</span>
+      <span class="chip chip--accent">Generative AI</span>
+      <span class="chip chip--accent">LLMs</span>
+      <span class="chip chip--accent">AI Agents</span>
+      <span class="chip chip--accent">Agentic AI</span>
+      <span class="chip chip--accent">Prompt Engineering</span>
+      <span class="chip chip--accent">RAG</span>
+      <span class="chip chip--accent">AI Applications</span>
+    </div>
+  </div>
+</section>
+
+<!-- Career Objective -->
+<section class="section objective">
+  <p class="kicker">objective</p>
+  <p class="objective__quote">
+    My goal is to become a skilled software developer specializing
+    in full-stack development and artificial intelligence — by
+    continuously learning emerging technologies, building
+    innovative solutions and contributing effectively to the
+    technology industry.
+  </p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section contact">
+  <p class="kicker">contact</p>
+  <h2 class="section__title">Let's connect</h2>
+  <p class="contact__desc">
+    I'm currently looking for opportunities in Software
+    Development, Full Stack Development and AI-related roles.
+  </p>
+  <p class="mono contact__prompt">msm@dev ~ $ connect --linkedin --github</p>
+  <div class="contact__actions">
+    <a
+      href="https://www.linkedin.com/in/mustafa-salman-mohammed-b46750307/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn--primary"
+    >
+      LinkedIn
+    </a>
+    <a
+      href="https://github.com/Mdmustafasalman748"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn--ghost"
+    >
+      GitHub
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Mustafa Salman Mohammed. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
