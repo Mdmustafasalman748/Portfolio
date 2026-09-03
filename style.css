@@ -292,7 +292,6 @@ a {
 .stack__layer--data { animation-delay: 0.18s; }
 .stack__layer--backend { animation-delay: 0.31s; }
 .stack__layer--frontend { animation-delay: 0.44s; }
-.stack__layer--ai { animation-delay: 0.6s; }
 
 .stack__header {
     display: flex;
@@ -325,19 +324,6 @@ a {
     gap: 8px;
 }
 
-.stack__layer--ai {
-    border-color: rgba(94, 234, 212, 0.35);
-    background:
-        repeating-linear-gradient(
-            135deg,
-            rgba(94, 234, 212, 0.06),
-            rgba(94, 234, 212, 0.06) 8px,
-            transparent 8px,
-            transparent 16px
-        ),
-        var(--panel-raised);
-}
-
 
 /* =========================
    CHIPS
@@ -358,12 +344,6 @@ a {
     font-family: var(--font-mono);
     font-size: 12.5px;
     white-space: nowrap;
-}
-
-.chip--accent {
-    background: rgba(94, 234, 212, 0.1);
-    border-color: rgba(94, 234, 212, 0.35);
-    color: var(--teal);
 }
 
 
@@ -470,10 +450,6 @@ a {
 .skill-card:hover {
     border-color: var(--teal);
     transform: translateY(-4px);
-}
-
-.skill-card--accent {
-    border-color: rgba(94, 234, 212, 0.3);
 }
 
 .skill-card__kicker {
@@ -761,47 +737,6 @@ a {
 
 
 /* =========================
-   CURRENTLY LEARNING
-========================= */
-
-.learning {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin: 100px auto;
-}
-
-.learning__panel {
-    background: var(--panel);
-    border: 1px solid rgba(94, 234, 212, 0.3);
-    border-radius: var(--radius);
-    padding: 50px 8%;
-    text-align: center;
-
-    background-image:
-        repeating-linear-gradient(
-            135deg,
-            rgba(94, 234, 212, 0.05),
-            rgba(94, 234, 212, 0.05) 10px,
-            transparent 10px,
-            transparent 20px
-        );
-}
-
-.learning .kicker {
-    color: var(--teal);
-}
-
-.learning .section__title {
-    max-width: 700px;
-    margin: 0 auto 28px;
-}
-
-.learning__chips {
-    justify-content: center;
-}
-
-
-/* =========================
    CAREER OBJECTIVE
 ========================= */
 
@@ -1000,9 +935,5 @@ footer {
     .cert-card,
     .edu-card {
         padding: 20px;
-    }
-
-    .learning__panel {
-        padding: 36px 20px;
     }
 }
