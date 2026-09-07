@@ -15,7 +15,7 @@ Personal portfolio site for Mustafa Salman Mohammed, a Junior Full-Stack Develop
 - **Skills** — technical skills by category
 - **Experience** — internships at MNet Academy and Internshala
 - **Education** — Lambton College and Osmania University
-- **Projects** — Employee Management System, Student Attendance System, PG Life Housing Project, Cloud Expense Tracker
+- **Projects** — Student Attendance System, PG Life Housing Project, Cloud Expense Tracker
 - **Certifications** — .NET, Azure, and web development training
 - **Contact** — LinkedIn, GitHub, and email
 

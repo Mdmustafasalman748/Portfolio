@@ -332,71 +332,42 @@
     <article class="window project-card">
       <div class="window__bar">
         <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
-        <span class="window__title mono">employee_management_system.cs</span>
-      </div>
-      <div class="window__body">
-        <p class="project-card__desc">
-          A full-stack system for efficiently managing
-          employee information.
-        </p>
-        <ul class="project-card__features">
-          <li>Employee record management</li>
-          <li>CRUD operations</li>
-          <li>Database connectivity</li>
-          <li>Frontend and backend integration</li>
-        </ul>
-        <div class="chip-row">
-          <span class="chip">C#</span>
-          <span class="chip">ASP.NET</span>
-          <span class="chip">ASP.NET MVC</span>
-          <span class="chip">SQL Server</span>
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">JavaScript</span>
-        </div>
-        <a
-          href="https://employeemanagementsystem-two-delta.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card__live"
-        >
-          View live ↗
-        </a>
-      </div>
-    </article>
-
-    <article class="window project-card">
-      <div class="window__bar">
-        <span class="dot"></span><span class="dot"></span><span class="dot dot--accent"></span>
         <span class="window__title mono">student_attendance_system.cs</span>
       </div>
       <div class="window__body">
         <p class="project-card__desc">
-          A web-based attendance system for tracking student
-          attendance and generating reports.
+          An ASP.NET Core MVC system for managing student,
+          course and attendance records, backed by SQL Server.
         </p>
         <ul class="project-card__features">
-          <li>Attendance tracking and reporting</li>
-          <li>Student record management</li>
-          <li>Built using Agile practices with Jira</li>
-          <li>Frontend and backend integration</li>
+          <li>Built the student and course records (list/create/edit/delete) as SQL Server tables, with a unique constraint on roll number and course code to block duplicates.</li>
+          <li>Built the attendance-marking grid — pick a course and date, mark every student Present/Absent/Late in one form — backed by a unique index on (student, course, date) so the same student can't be marked twice for the same class on the same day.</li>
+          <li>Wrote the Dockerfile and GitHub Actions pipeline that builds, tests, and deploys to Render via a deploy hook on every push to main.</li>
         </ul>
         <div class="chip-row">
+          <span class="chip">C#</span>
+          <span class="chip">SQL Server</span>
           <span class="chip">ASP.NET</span>
-          <span class="chip">SQLite</span>
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">Jira</span>
+          <span class="chip">MVC</span>
         </div>
-        <a
-          href="https://student-attendance-system-amk7.onrender.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card__live"
-        >
-          View live ↗
-        </a>
+        <div class="project-card__links">
+          <a
+            href="https://student-attendance-system-amk7.onrender.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card__live"
+          >
+            View live ↗
+          </a>
+          <a
+            href="https://github.com/Mdmustafasalman748/Student-Attendance-System"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card__live"
+          >
+            GitHub ↗
+          </a>
+        </div>
       </div>
     </article>
 
@@ -407,29 +378,37 @@
       </div>
       <div class="window__body">
         <p class="project-card__desc">
-          A web application designed to help students find
-          suitable accommodation.
+          A static site that helps students search and
+          compare student housing listings by city.
         </p>
         <ul class="project-card__features">
-          <li>Housing search functionality</li>
-          <li>Frontend development</li>
-          <li>Database management</li>
-          <li>Frontend and backend integration</li>
+          <li>Built the property listing grid: render cards (name, location, price, room type, availability badge) from a JS data set, re-rendering on every search instead of a static page per listing.</li>
+          <li>Built the city search: typing a city or tapping a city tile filters listings to an exact match, with a live result count and a "no properties found" empty state.</li>
+          <li>Deployed as a static site on Vercel, with a GitHub Actions check that validates the required frontend files and that index.html is well-formed on every push.</li>
         </ul>
         <div class="chip-row">
           <span class="chip">HTML</span>
           <span class="chip">CSS</span>
           <span class="chip">JavaScript</span>
-          <span class="chip">Database</span>
         </div>
-        <a
-          href="https://pg-life-ten-beta.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card__live"
-        >
-          View live ↗
-        </a>
+        <div class="project-card__links">
+          <a
+            href="https://pg-life-ten-beta.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card__live"
+          >
+            View live ↗
+          </a>
+          <a
+            href="https://github.com/Mdmustafasalman748/PG-Life"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card__live"
+          >
+            GitHub ↗
+          </a>
+        </div>
       </div>
     </article>
 
@@ -440,29 +419,37 @@
       </div>
       <div class="window__body">
         <p class="project-card__desc">
-          A cloud-hosted expense tracker built with a React
-          frontend and AWS for cloud infrastructure, for
-          logging and keeping tabs on everyday spending
-          from any device.
+          A React expense-tracking dashboard with charts,
+          exports, and JWT-authenticated API integration.
         </p>
         <ul class="project-card__features">
-          <li>Add and manage expense entries</li>
-          <li>Cloud-hosted on AWS, accessible from any device</li>
-          <li>Component-based React frontend</li>
+          <li>Built the analytics dashboard — category breakdown, monthly trend, and daily-spending charts computed client-side from the fetched expense list.</li>
+          <li>Built CSV/PDF/JSON export: generates a formatted PDF report or a CSV/JSON download, for either the filtered results or the full expense list.</li>
+          <li>Wired the React app to the REST API with JWT auth: Axios request interceptor attaches the token to every call, response interceptor clears the session and redirects to /login on a 401.</li>
         </ul>
         <div class="chip-row">
           <span class="chip">React</span>
-          <span class="chip">AWS</span>
-          <span class="chip">Cloud Computing</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">JWT</span>
         </div>
-        <a
-          href="https://cloud-computing-project-taupe.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="project-card__live"
-        >
-          View live ↗
-        </a>
+        <div class="project-card__links">
+          <a
+            href="https://cloud-computing-project-taupe.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card__live"
+          >
+            View live ↗
+          </a>
+          <a
+            href="https://github.com/Mdmustafasalman748/Cloud-Expense-Tracker"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card__live"
+          >
+            GitHub ↗
+          </a>
+        </div>
       </div>
     </article>
   </div>
